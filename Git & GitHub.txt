@@ -1,0 +1,72 @@
+Git & GitHub
+
+cd folder-name -> go into folder 
+cd ..          -> go up one directory
+cd /           -> go to root directory
+cd ~           -> go to home directory
+dir            -> list files
+ls /-la/a      -> list file /all hidden file
+
+mkdir folder-name   -> create a folder
+touch file-name.txt ->create a file
+start folder-name/file.txt   -> open folder/file
+rm -r folder-name   -> delete folder and sub folders
+rm file.txt  -> delete and staged the file at the same time
+del file.txt        -> delete file
+redir folder-name   -> remove folder
+git status      -> to see update
+
+move file.txt folder -> move file
+
+cat file.txt  -> show file content
+type file.txt -> windows version 
+more file.txt -> view page by page
+
+find . -name "file.txt"  -> find file
+grep "text" file.text    -> search inside file
+
+clear         -> clear terminal
+echo hello  -> print text
+whoami      -> show current user 
+exit        -> close terminal
+
+npm install  -> install packages
+git clone    -> download repo 
+
+git init -> to initialized git the folder / git to start cracking folder
+
+git add --all/ git add -A     -> to stage everything
+git add .                     -> to stage in the current directory only not before but after
+git add *                     -> won't stage deleted file but new or modified 
+git reset HEAD~               -> to undo last commit 
+git reset --hard              ->to bring back the files to a local 
+git rm file.txt               -> both delete and stage it
+git rm -f force               -> delete form both local and staging area 
+git rm --cached               -> only removed it to staging are keep the file local
+git log/git log --oneline     ->  to see commit comment 
+git branch                    -> to see branches
+git branch (name)              -> to create other branch  
+git checkout (name)            -> to switch branch 
+git merge (name) -m "comment"   -> to merge branch
+git checkout (commit-ID)         -> to switch version  
+git push origin(GitHub) main(branch)        -> to push to git hub from local
+git fetch                        -> to download GitHub update but to reflect it on local git merge 
+git pull                      fetch and reflect together
+git restore file.txt/git restore ./git restore dir          -> to restore local dir to last uncommitted stage 
+git restore --staged                     -> to restore staged local file to last committed
+git stash                        -> temporarily set aside your unfinished work switch to another branch to do something 
+git stash pop                     -> pop resent stash
+git stash drop                    -> to delete stash
+git stash apply                   -> not delete a stash list
+
+echo "# git-journey" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/yosef7789/git-journey.git
+git push -u origin main
+
+git remote add origin https://github.com/yosef7789/git-journey.git
+git branch -M main
+git push -u origin main
